@@ -28,10 +28,11 @@ int main() {
     perror("msgget");
     exit(1);
   }
-
-  if (msgrcv(msqid, &mymsg, MSGSZ, 1, 0) < 0) {
-    perror("msgrcv");
-    exit(1);
+  while (1) {
+    if (msgrcv(msqid, &mymsg, MSGSZ, 1, 0) < 0) {
+      perror("msgrcv");
+      exit(1);
+    }
+    cout << mymsg.mtext << endl;
   }
-  cout << mymsg.mtext << endl;
 }
