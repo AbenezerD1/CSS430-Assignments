@@ -39,8 +39,9 @@ int main(int argc, char **argv) {
       }else if(pid == 0){
         // if I'm a great-grand-child
         // execute "ps"
-        //close(fds[1][RD]);
-        //dup2(fds[1][WR], 0);
+
+        close(fds[1][RD]);
+        dup2(fds[1][WR], 1); // stdout --> fds[1][1]
         
         execlp("/bin/ps","ps","-A", NULL);
       }else{
@@ -48,10 +49,10 @@ int main(int argc, char **argv) {
       }
       // else if I'm a grand-child
       // execute "grep"
-      //close(fds[1][RD]);
-      //dup2(fds[1][WR],0); // stdin --> great grand child stdout
+      close(fds[1][WR]);
+      dup2(fds[1][RD],0); // stdin --> great grand child stdout
       
-      //execlp("/bin/grep", "grep",argv[1],NULL);
+      execlp("/bin/grep", "grep",argv[1],NULL);
     }else{
       
       wait(NULL);
