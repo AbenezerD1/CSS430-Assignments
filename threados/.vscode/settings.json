@@ -1,6 +1,0 @@
-{
-    "java.debug.settings.onBuildFailureProceed": true,
-    "java.project.sourcePaths": [
-        "P1"
-    ]
-}
