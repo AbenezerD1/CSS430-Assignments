@@ -19,12 +19,13 @@ public class PingPongDriver extends Thread {
         // Create and start the first PingPong instance 100ms
         String[] pingArgs = {"PingPong", "PING", "100"}; 
         SysLib.exec(pingArgs);
-
+        SysLib.join();          // wait for Ping Thread to complete
+        
         // Create and start the second PingPong instance 50ms (2x faster)
         String[] pongArgs = {"PingPong", "pong", "50"}; 
         SysLib.exec(pongArgs);
 
-        SysLib.join();          // wait for Ping Thread to complete
+
         SysLib.join();          // wait for Pong Thread to complete
         SysLib.exit();
         SysLib.cout("PingPong Test Complete!" + "\n");
