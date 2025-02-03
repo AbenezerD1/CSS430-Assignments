@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ThreadSum",
+            "request": "launch",
+            "mainClass": "ThreadSum",
+            "projectName": "ThreadSumExecutor_49a888a7"
+        },
+        {
+            "type": "java",
+            "name": "ThreadSum",
+            "request": "launch",
+            "mainClass": "ThreadSum",
+            "projectName": "ThreadSumExecutor_fb9f9139"
+        },
+        {
+            "type": "java",
+            "name": "ThreadSum",
+            "request": "launch",
+            "mainClass": "ThreadSum",
+            "projectName": "Args_d54fb33d",
+            "args": [
+                "2025",
+                "314159",
+                "123456"
+            ]
+        }
+    ]
+}
