@@ -18,7 +18,7 @@ class Shell extends Thread {
       while(!cmdLine.equalsIgnoreCase("exit")){
          cmdLine = GetLine();
 
-         if(cmdLine.isEmpty()){
+         if(cmdLine.isEmpty() || cmdLine.equalsIgnoreCase("exit")){
             continue;
          }
 
