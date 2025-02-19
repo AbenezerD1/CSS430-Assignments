@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.OSTask_FCFSTest" time="5.116" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.OSTask_FCFSTest" time="1.113" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/bellsoft-java21-lite-aarch64/lib"/>
-    <property name="sun.java.command" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/surefire/surefirebooter-20250207230858554_3.jar /home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/surefire 2025-02-07T23-08-58_422-jvmRun1 surefire-20250207230858554_1tmp surefire_0-20250207230858554_2tmp"/>
+    <property name="sun.java.command" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/surefire/surefirebooter-20250218215953346_3.jar /home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/surefire 2025-02-18T21-59-53_184-jvmRun1 surefire-20250218215953346_1tmp surefire_0-20250218215953346_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/test-classes:/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/classes:/home/ab-test-comp/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1.jar:/home/ab-test-comp/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ab-test-comp/.m2/repository/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1.jar:/home/ab-test-comp/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/ab-test-comp/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar:/home/ab-test-comp/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/surefire/surefirebooter-20250207230858554_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/surefire/surefirebooter-20250218215953346_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.5+11-LTS"/>
     <property name="user.name" value="ab-test-comp"/>
@@ -54,7 +54,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testFCFSScheduling" classname="com.example.OSTask_FCFSTest" time="5.113">
+  <testcase name="testFCFSScheduling" classname="com.example.OSTask_FCFSTest" time="1.11">
     <failure message="Task should not be running after its burst time. ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Task should not be running after its burst time. ==> expected: <false> but was: <true>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -133,16 +133,16 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
-    <system-out><![CDATA[Task: Task A, Remaining Burst: 5000
-Task: Task B, Remaining Burst: 4000
-Task: Task C, Remaining Burst: 1000
+    <system-out><![CDATA[Task: Task A, Remaining Burst: 1000
+Task: Task B, Remaining Burst: 2000
+Task: Task C, Remaining Burst: 4000
 Task: Task D, Remaining Burst: 3000
-Task: Task E, Remaining Burst: 2000
-{ "task": "Task A", "start": 1738998609423, "duration": 5000}
-{ "task": "Task B", "start": 1738998609423, "duration": 4000}
-{ "task": "Task C", "start": 1738998609427, "duration": 1000}
-{ "task": "Task D", "start": 1738998609427, "duration": 3000}
-{ "task": "Task E", "start": 1738998609428, "duration": 2000}
+Task: Task E, Remaining Burst: 5000
+{ "task": "Task A", "start": 1739944980085, "duration": 1000}
+{ "task": "Task B", "start": 1739944980086, "duration": 2000}
+{ "task": "Task C", "start": 1739944980091, "duration": 4000}
+{ "task": "Task D", "start": 1739944980092, "duration": 3000}
+{ "task": "Task E", "start": 1739944980093, "duration": 5000}
 ]]></system-out>
   </testcase>
 </testsuite>

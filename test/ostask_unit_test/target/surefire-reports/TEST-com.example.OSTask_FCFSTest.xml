@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.OSTaskTest" time="70.783" tests="9" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.OSTask_FCFSTest" time="2.128" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/test-classes:/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/classes:/home/ab-test-comp/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1.jar:/home/ab-test-comp/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ab-test-comp/.m2/repository/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1.jar:/home/ab-test-comp/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/ab-test-comp/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar:/home/ab-test-comp/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar:"/>
+    <property name="java.class.path" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/test/ostask_unit_test/target/test-classes:/home/ab-test-comp/Desktop/class/CSS430-Assignments/test/ostask_unit_test/target/classes:/home/ab-test-comp/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1.jar:/home/ab-test-comp/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ab-test-comp/.m2/repository/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1.jar:/home/ab-test-comp/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/ab-test-comp/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar:/home/ab-test-comp/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar:"/>
     <property name="java.vm.vendor" value="BellSoft"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://bell-sw.com/"/>
@@ -12,9 +12,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/bellsoft-java21-lite-aarch64/lib"/>
-    <property name="sun.java.command" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/surefire/surefirebooter-20250218215953346_3.jar /home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/surefire 2025-02-18T21-59-53_184-jvmRun1 surefire-20250218215953346_1tmp surefire_0-20250218215953346_2tmp"/>
+    <property name="sun.java.command" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/test/ostask_unit_test/target/surefire/surefirebooter-20250213193945082_3.jar /home/ab-test-comp/Desktop/class/CSS430-Assignments/test/ostask_unit_test/target/surefire 2025-02-13T19-39-44_963-jvmRun1 surefire-20250213193945082_1tmp surefire_0-20250213193945082_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/test-classes:/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/classes:/home/ab-test-comp/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1.jar:/home/ab-test-comp/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ab-test-comp/.m2/repository/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1.jar:/home/ab-test-comp/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/ab-test-comp/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar:/home/ab-test-comp/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar:"/>
+    <property name="surefire.test.class.path" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/test/ostask_unit_test/target/test-classes:/home/ab-test-comp/Desktop/class/CSS430-Assignments/test/ostask_unit_test/target/classes:/home/ab-test-comp/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1.jar:/home/ab-test-comp/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ab-test-comp/.m2/repository/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1.jar:/home/ab-test-comp/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/ab-test-comp/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar:/home/ab-test-comp/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/ab-test-comp"/>
     <property name="user.language" value="en"/>
@@ -22,12 +22,12 @@
     <property name="java.version.date" value="2024-10-15"/>
     <property name="java.home" value="/usr/lib/jvm/bellsoft-java21-lite-aarch64"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test"/>
+    <property name="basedir" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/test/ostask_unit_test"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/surefire/surefirebooter-20250218215953346_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/test/ostask_unit_test/target/surefire/surefirebooter-20250213193945082_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.5+11-LTS"/>
     <property name="user.name" value="ab-test-comp"/>
@@ -42,7 +42,7 @@
     <property name="java.vendor.url.bug" value="https://bell-sw.com/support"/>
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="java.version" value="21.0.5"/>
-    <property name="user.dir" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test"/>
+    <property name="user.dir" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/test/ostask_unit_test"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="native.encoding" value="UTF-8"/>
@@ -54,45 +54,14 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testStartStop" classname="com.example.OSTaskTest" time="0.02">
-    <system-out><![CDATA[{ "task": "Test Task", "start": 1739944909300, "duration": 1000}
-]]></system-out>
-  </testcase>
-  <testcase name="testIsTaskAliveBeforeStart" classname="com.example.OSTaskTest" time="0.002"/>
-  <testcase name="testIsTaskAliveAfterStart" classname="com.example.OSTaskTest" time="0.015">
-    <system-out><![CDATA[{ "task": "Test Task", "start": 1739944909326, "duration": 1000}
-]]></system-out>
-  </testcase>
-  <testcase name="testConstructorAndGetName" classname="com.example.OSTaskTest" time="0.002"/>
-  <testcase name="testIsTaskAliveAfterStop" classname="com.example.OSTaskTest" time="0.017">
-    <system-out><![CDATA[{ "task": "Test Task", "start": 1739944909358, "duration": 1000}
-]]></system-out>
-  </testcase>
-  <testcase name="testBurstSuspendResume" classname="com.example.OSTaskTest" time="20.02">
-    <system-out><![CDATA[Burst Task Started: Burst=10000
-{ "task": "Burst Task", "start": 1739944909375, "duration": 10000}
-Burst Task Suspended: Burst=9999
-Burst Task Resumed: Burst=9999
-Burst Task Resumed: Burst=9164
-Burst Task Resumed: Burst=8341
-Burst Task Resumed: Burst=7601
-Burst Task Resumed: Burst=6760
-Burst Task Resumed: Burst=5884
-Burst Task Resumed: Burst=5064
-Burst Task Resumed: Burst=4251
-Burst Task Resumed: Burst=3400
-Burst Task Resumed: Burst=2547
-Burst Task Completed: Burst=1719
-]]></system-out>
-  </testcase>
-  <testcase name="testMultipleConcurrentTaskBurstTimes" classname="com.example.OSTaskTest" time="10.645">
-    <failure message="Task 1 burst time not within acceptable range ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Task 1 burst time not within acceptable range ==> expected: <true> but was: <false>
+  <testcase name="testFCFSScheduling" classname="com.example.OSTask_FCFSTest" time="2.123">
+    <failure message="Task should not be running after its burst time. ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Task should not be running after its burst time. ==> expected: <false> but was: <true>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
-	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:211)
-	at com.example.OSTaskTest.testMultipleConcurrentTaskBurstTimes(OSTaskTest.java:193)
+	at org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
+	at org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:236)
+	at com.example.OSTask_FCFSTest.testFCFSScheduling(OSTask_FCFSTest.java:53)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
@@ -164,60 +133,16 @@ Burst Task Completed: Burst=1719
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
-    <system-out><![CDATA[{ "task": "Task 1", "start": 1739944929401, "duration": 500}
-{ "task": "Task 2", "start": 1739944929401, "duration": 1000}
-{ "task": "Task 3", "start": 1739944929402, "duration": 2000}
-{ "task": "Task 4", "start": 1739944929406, "duration": 4000}
-Task 1: Burst time (expected 500 ms): 1005 ms
-]]></system-out>
-  </testcase>
-  <testcase name="testSuspendResume" classname="com.example.OSTaskTest" time="0.013">
-    <system-out><![CDATA[{ "task": "Test Task", "start": 1739944940045, "duration": 1000}
-]]></system-out>
-  </testcase>
-  <testcase name="testPingPongSuspendResume" classname="com.example.OSTaskTest" time="40.02">
-    <system-out><![CDATA[{ "task": "Pong Task", "start": 1739944940060, "duration": 10000}
-{ "task": "Ping Task", "start": 1739944940060, "duration": 10000}
-Ping Task Resumed: Burst=10000
-Ping Task Suspended: Burst=9179
-Pong Task Resumed: Burst=10000
-Pong Task Suspended: Burst=9180
-Ping Task Resumed: Burst=9179
-Ping Task Suspended: Burst=8385
-Pong Task Resumed: Burst=9180
-Pong Task Suspended: Burst=8372
-Ping Task Resumed: Burst=8385
-Ping Task Suspended: Burst=7556
-Pong Task Resumed: Burst=8372
-Pong Task Suspended: Burst=7493
-Ping Task Resumed: Burst=7556
-Ping Task Suspended: Burst=6727
-Pong Task Resumed: Burst=7493
-Pong Task Suspended: Burst=6623
-Ping Task Resumed: Burst=6727
-Ping Task Suspended: Burst=5911
-Pong Task Resumed: Burst=6623
-Pong Task Suspended: Burst=5811
-Ping Task Resumed: Burst=5911
-Ping Task Suspended: Burst=5084
-Pong Task Resumed: Burst=5811
-Pong Task Suspended: Burst=4982
-Ping Task Resumed: Burst=5084
-Ping Task Suspended: Burst=4245
-Pong Task Resumed: Burst=4982
-Pong Task Suspended: Burst=4129
-Ping Task Resumed: Burst=4244
-Ping Task Suspended: Burst=3402
-Pong Task Resumed: Burst=4129
-Pong Task Suspended: Burst=3311
-Ping Task Resumed: Burst=3402
-Ping Task Suspended: Burst=2595
-Pong Task Resumed: Burst=3311
-Pong Task Suspended: Burst=2468
-Ping Task Resumed: Burst=2595
-Ping Task Suspended: Burst=1758
-Pong Task Resumed: Burst=2468
-Pong Task Suspended: Burst=1620
+    <system-out><![CDATA[Task: Task A, Remaining Burst: 2000
+Task: Task B, Remaining Burst: 3000
+Task: Task C, Remaining Burst: 4000
+Task: Task D, Remaining Burst: 1000
+Task: Task E, Remaining Burst: 5000
+{ "task": "Task A", "start": 1739504455983, "duration": 2000}
+{ "task": "Task B", "start": 1739504455993, "duration": 3000}
+{ "task": "Task C", "start": 1739504455996, "duration": 4000}
+{ "task": "Task D", "start": 1739504455997, "duration": 1000}
+{ "task": "Task E", "start": 1739504455997, "duration": 5000}
 ]]></system-out>
   </testcase>
 </testsuite>

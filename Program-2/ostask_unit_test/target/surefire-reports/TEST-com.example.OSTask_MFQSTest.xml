@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.OSTask_MFQSTest" time="0.021" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.OSTask_MFQSTest" time="74.339" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/bellsoft-java21-lite-aarch64/lib"/>
-    <property name="sun.java.command" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/surefire/surefirebooter-20250207230858554_3.jar /home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/surefire 2025-02-07T23-08-58_422-jvmRun1 surefire-20250207230858554_1tmp surefire_0-20250207230858554_2tmp"/>
+    <property name="sun.java.command" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/surefire/surefirebooter-20250218215953346_3.jar /home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/surefire 2025-02-18T21-59-53_184-jvmRun1 surefire-20250218215953346_1tmp surefire_0-20250218215953346_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/test-classes:/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/classes:/home/ab-test-comp/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1.jar:/home/ab-test-comp/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ab-test-comp/.m2/repository/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1.jar:/home/ab-test-comp/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/ab-test-comp/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar:/home/ab-test-comp/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/surefire/surefirebooter-20250207230858554_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/surefire/surefirebooter-20250218215953346_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.5+11-LTS"/>
     <property name="user.name" value="ab-test-comp"/>
@@ -54,12 +54,105 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testConstructorAndGetName" classname="com.example.OSTask_MFQSTest" time="0.011">
+  <testcase name="testConstructorAndGetName" classname="com.example.OSTask_MFQSTest" time="0.005">
     <system-out><![CDATA[Task: Task B, Data: [0, 1000]
 Task: Task A, Data: [0, 5000]
 Task: Task E, Data: [0, 500]
 Task: Task D, Data: [0, 6000]
 Task: Task C, Data: [0, 3000]
+]]></system-out>
+  </testcase>
+  <testcase name="testMFQScheduler" classname="com.example.OSTask_MFQSTest" time="74.329">
+    <system-out><![CDATA[{ "task": "Task B", "start": 1739944834964, "duration": 1000}
+{ "task": "Task A", "start": 1739944834965, "duration": 5000}
+{ "task": "Task D", "start": 1739944834966, "duration": 6000}
+{ "task": "Task E", "start": 1739944834966, "duration": 500}
+{ "task": "Task C", "start": 1739944834968, "duration": 3000}
+
+Processing Queue 0
+Task B: executing in queue 0
+Task A: executing in queue 0
+Task E: executing in queue 0
+Task D: executing in queue 0
+Task C: executing in queue 0
+
+Processing Queue 1
+Task B: executing in queue 1
+Task A: executing in queue 1
+Task E: executing in queue 1
+
+Task E finished executing in queue 1.
+    Submission Time: 0.0 ms
+    Response Time: 1011.0 ms
+    TAT: 5249.0 ms
+    Execution Time: 1237.0 ms
+
+Task D: executing in queue 1
+Task C: executing in queue 1
+
+Processing Queue 2
+Task B: executing in queue 2
+{ "task": "Task B", "start": 1739944843279, "duration": 0}
+
+Task B finished executing in queue 2.
+    Submission Time: 0.0 ms
+    Response Time: 11.0 ms
+    TAT: 10314.0 ms
+    Execution Time: 2564.0 ms
+
+Task A: executing in queue 2
+{ "task": "Task A", "start": 1739944847279, "duration": 3560}
+Task D: executing in queue 2
+{ "task": "Task D", "start": 1739944851280, "duration": 4580}
+Task C: executing in queue 2
+{ "task": "Task C", "start": 1739944855282, "duration": 1479}
+Task A: executing in queue 2
+{ "task": "Task A", "start": 1739944859282, "duration": 2774}
+Task D: executing in queue 2
+{ "task": "Task D", "start": 1739944863283, "duration": 3833}
+Task C: executing in queue 2
+{ "task": "Task C", "start": 1739944867283, "duration": 634}
+Task A: executing in queue 2
+{ "task": "Task A", "start": 1739944871284, "duration": 1929}
+Task D: executing in queue 2
+{ "task": "Task D", "start": 1739944875284, "duration": 2962}
+Task C: executing in queue 2
+{ "task": "Task C", "start": 1739944879285, "duration": 0}
+
+Task C finished executing in queue 2.
+    Submission Time: 0.0 ms
+    Response Time: 2009.0 ms
+    TAT: 46317.0 ms
+    Execution Time: 7503.0 ms
+
+Task A: executing in queue 2
+{ "task": "Task A", "start": 1739944883285, "duration": 1107}
+Task D: executing in queue 2
+{ "task": "Task D", "start": 1739944887286, "duration": 2167}
+Task A: executing in queue 2
+{ "task": "Task A", "start": 1739944891286, "duration": 295}
+Task D: executing in queue 2
+{ "task": "Task D", "start": 1739944895287, "duration": 1338}
+Task A: executing in queue 2
+{ "task": "Task A", "start": 1739944899287, "duration": 0}
+
+Task A finished executing in queue 2.
+    Submission Time: 0.0 ms
+    Response Time: 511.0 ms
+    TAT: 66322.0 ms
+    Execution Time: 13501.0 ms
+
+Task D: executing in queue 2
+{ "task": "Task D", "start": 1739944903288, "duration": 522}
+Task D: executing in queue 2
+{ "task": "Task D", "start": 1739944907288, "duration": 0}
+
+Task D finished executing in queue 2.
+    Submission Time: 0.0 ms
+    Response Time: 1510.0 ms
+    TAT: 74323.0 ms
+    Execution Time: 15501.0 ms
+
 ]]></system-out>
   </testcase>
 </testsuite>

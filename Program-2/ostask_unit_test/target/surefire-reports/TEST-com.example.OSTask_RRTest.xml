@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.OSTask_RRTest" time="0.072" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.OSTask_RRTest" time="40.548" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/bellsoft-java21-lite-aarch64/lib"/>
-    <property name="sun.java.command" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/surefire/surefirebooter-20250207230858554_3.jar /home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/surefire 2025-02-07T23-08-58_422-jvmRun1 surefire-20250207230858554_1tmp surefire_0-20250207230858554_2tmp"/>
+    <property name="sun.java.command" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/surefire/surefirebooter-20250218215953346_3.jar /home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/surefire 2025-02-18T21-59-53_184-jvmRun1 surefire-20250218215953346_1tmp surefire_0-20250218215953346_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/test-classes:/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/classes:/home/ab-test-comp/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1.jar:/home/ab-test-comp/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ab-test-comp/.m2/repository/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1.jar:/home/ab-test-comp/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/ab-test-comp/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar:/home/ab-test-comp/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/surefire/surefirebooter-20250207230858554_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/ab-test-comp/Desktop/class/CSS430-Assignments/Program-2/ostask_unit_test/target/surefire/surefirebooter-20250218215953346_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.5+11-LTS"/>
     <property name="user.name" value="ab-test-comp"/>
@@ -54,12 +54,90 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testConstructorAndGetName" classname="com.example.OSTask_RRTest" time="0.043">
+  <testcase name="testConstructorAndGetName" classname="com.example.OSTask_RRTest" time="0.044">
     <system-out><![CDATA[Task: Task B, Data: [0, 1000]
 Task: Task A, Data: [0, 5000]
 Task: Task E, Data: [0, 500]
 Task: Task D, Data: [0, 6000]
 Task: Task C, Data: [0, 3000]
+]]></system-out>
+  </testcase>
+  <testcase name="testRRScheduler" classname="com.example.OSTask_RRTest" time="40.466">
+    <system-out><![CDATA[Task: Task A, Initial Burst: 5000
+Task: Task B, Initial Burst: 2000
+Task: Task C, Initial Burst: 4000
+Task: Task D, Initial Burst: 3000
+Task: Task E, Initial Burst: 1000
+Task A executing.
+{ "task": "Task B", "start": 1739944794490, "duration": 2000}
+{ "task": "Task C", "start": 1739944794491, "duration": 4000}
+{ "task": "Task A", "start": 1739944794490, "duration": 5000}
+{ "task": "Task D", "start": 1739944794491, "duration": 3000}
+{ "task": "Task E", "start": 1739944794493, "duration": 1000}
+Task B executing.
+Task C executing.
+Task D executing.
+Task E executing.
+Task A executing.
+Task B executing.
+Task C executing.
+Task D executing.
+Task E executing.
+Task A executing.
+Task B executing.
+Task C executing.
+Task D executing.
+Task E executing.
+Task E finished.
+    Submission Time: 0.0 ms
+    Response Time: 4409.0 ms
+    TAT: 15724.0 ms
+    Execution Time: 2312.0 ms
+Task A executing.
+Task B executing.
+Task C executing.
+Task D executing.
+Task A executing.
+Task B executing.
+Task B finished.
+    Submission Time: 0.0 ms
+    Response Time: 1111.0 ms
+    TAT: 22209.0 ms
+    Execution Time: 4979.0 ms
+Task C executing.
+Task D executing.
+Task A executing.
+Task C executing.
+Task D executing.
+Task A executing.
+Task C executing.
+Task D executing.
+Task A executing.
+Task C executing.
+Task D executing.
+Task D finished.
+    Submission Time: 0.0 ms
+    Response Time: 3310.0 ms
+    TAT: 33428.0 ms
+    Execution Time: 7220.0 ms
+Task A executing.
+Task C executing.
+Task A executing.
+Task C executing.
+Task A executing.
+Task C executing.
+Task C finished.
+    Submission Time: 0.0 ms
+    Response Time: 2210.0 ms
+    TAT: 39160.0 ms
+    Execution Time: 10233.0 ms
+Task A executing.
+Task A executing.
+Task A finished.
+    Submission Time: 0.0 ms
+    Response Time: 10.0 ms
+    TAT: 40453.0 ms
+    Execution Time: 12195.0 ms
 ]]></system-out>
   </testcase>
 </testsuite>
